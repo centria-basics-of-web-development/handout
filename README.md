@@ -1,1 +1,1 @@
-# Git Version Control System
+## This repository is holding the course related handouts.
