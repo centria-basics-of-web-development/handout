@@ -23,6 +23,8 @@ These are just some, not all, scenarios that a version control system can fit. O
 
 You can learn a lot more about version control and Git by reading the ebook on the Git homepage. Sections 2.2 - 2.5 of the said book cover most of what is needed on this course.
 
+You can find a nice video about Git&GitHub [here](https://youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&si=ZSV9ACb5aUULv68p)
+
 GitHub is an online service for hosting your Git repository. GitHub is free for open source projects. Building engineer's career profile with open source project through GitHub is highly evaluted when applying jobs, especially for the students. Therefore, GitHub is selected to use in the course for the students to submit the assignments. If you have not used GitHub, you definitely should register an account in GitHub and start to use it. You may follow this [instruction](https://docs.github.com/en/get-started/start-your-journey/hello-world) to learn GitHub.
 
 ### Git workflow
