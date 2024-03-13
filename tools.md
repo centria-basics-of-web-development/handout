@@ -68,3 +68,5 @@ Branches are a good way not to break existing functionality when implementing mo
 You can create new branches with the command git checkout -b BRANCH_NAME. The new branch will be the one left open. You can push branches to the remote repo with git push origin BRANCH_NAME. And you can list all branches with git branch -a.
 
 So, you have checked out a branch for a feature and merrily coded away. Now, how do you merge the new branch back to the main branch? Well, you first need to check out the main branch (the branch to which you want the new code) with git checkout main and then merge the other branch onto main with git merge BRANCH_NAME main.
+
+## Node.js, a JavaScript runtime
