@@ -57,6 +57,8 @@ The `<a>` tag has a special attribute, target, which can be used to specify how 
 
 Normally, the target attribute can be omitted and only reached for in specific scenarios. This allows the user to choose whether they want to follow the link or to open multiple links to new tabs in the background. Having said that links that result in downloading a document should (in my opinion) have target _blank, as sometimes pdf readers make it difficult to return to the previous page.
 
+Example: [Link attribute](https://syedmaqsoodblr.github.io/Stack-Overflow-Answers/HTML%20Frames/iframe.html)
+
 ### Element - forms
 Forms are used to send data from a browser to a server. Currently, `<form>` elements can only perform either GET or POST requests, hence they are most usable for the visitors of a webpage - a developer will most often communicate with the server via XHR (XMLHttpRequest) to be able to use all the HTTP verbs.
 
@@ -71,3 +73,8 @@ The communication happens via HTTP - HyperText Transfer Protocol.
 This example would perform a POST request to /scripts/add_contact when the button with the label Add was pressed, sending us the request body the names and values of the input fields as key-value -pairs.
 
 A good blog: [Dive into HTML5 form](http://diveintohtml5.info/forms.html)
+
+### Element - iframe
+An `<iframe>` can be used to embed another HTML document to the current document. The other document can be referenced with the src attribute, much like an image. If the embedded HTML document comes from another domain, there are some restrictions to what it can do.
+
+Example: [text]()
