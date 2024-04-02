@@ -1,69 +1,24 @@
 const http = require('http');
 const fs = require('fs');
-const port = 9090;
+const port = 8989;
+const fileRoot = 'www';
 const server = http.createServer(
     (request, response) => {
-        if (request.url === '/index') {
-            if (request.method === 'GET') {
-                console.log('here is the handler for GET method');
-                console.log(request.headers['accept']);
-                
-                // Return HTML
-                const fileBuffer = fs.readFileSync('./www/index.html');
-                response.writeHead(200);
-                response.write(fileBuffer.toString());
+        const fileName = request.url.substring(1);
+        const filePath = `${fileRoot}/${fileName}`;
+        if (request.method === 'GET') {          
+            // Return HTML
+            fs.readFile(filePath, 'utf8', (err, data) => {
+                if (err) {
+                    response.writeHead(404);
+                } else {
+                    response.writeHead(200);
+                    response.write(data);
+                }
                 response.end();
-            }
+            });
+            
         }
-        if (request.url === '/about') {
-            if (request.method === 'GET') {
-                console.log('here is the handler for GET method');
-                console.log(request.headers['accept']);
-                
-                // Return HTML
-                const fileBuffer = fs.readFileSync('./www/about.html');
-                response.writeHead(200);
-                response.write(fileBuffer.toString());
-                response.end();
-            } 
-        }
-        if (request.url === '/contact') {
-            if (request.method === 'GET') {
-                console.log('here is the handler for GET method');
-                console.log(request.headers['accept']);
-                
-                // Return HTML
-                const fileBuffer = fs.readFileSync('./www/contact.html');
-                response.writeHead(200);
-                response.write(fileBuffer.toString());
-                response.end();
-            } 
-        }
-        if (request.url === '/script.js') {
-            if (request.method === 'GET') {
-                console.log('here is the handler for GET method');
-                console.log(request.headers['accept']);
-                
-                // Return HTML
-                const fileBuffer = fs.readFileSync('./www/script.js');
-                response.writeHead(200);
-                response.write(fileBuffer.toString());
-                response.end();
-            } 
-        }  
-        if (request.url === '/style.css') {
-            if (request.method === 'GET') {
-                console.log('here is the handler for GET method');
-                console.log(request.headers['accept']);
-                
-                // Return HTML
-                const fileBuffer = fs.readFileSync('./www/style.css');
-                response.writeHead(200);
-                response.write(fileBuffer.toString());
-                console.log(fileBuffer.toString());
-                response.end();
-            } 
-        }  
     }
 
 );
