@@ -3,16 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to my website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Web Layout Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <p>
-        <a href="about.html">About us</a> |
-        <a href="contact.html">Contact us</a>
-    </p>
+    <div class="sidebar">
+        <p>Some sidebar information</p>
+    </div>
+    <div class="main">
+        <header>
+            <a href="#" id="logo">WebLayoutDemo</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="hero">
+            <div id="content">
+                <h1 id="title">Just a Demo</h1>
+                <p id="content_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis
+                    delectus
+                    eveniet aperiam
+                    tenetur dolorem commodi eaque atque? Alias aspernatur nisi sequi delectus asperiores saepe tempore
+                    corrupti facere tempora cum.</p>
+            </div>
+            <img src="images/mountain.jpg" id="mountain">
+        </section>
+        <section id="info">
+            <div id="content2">
+                <h2>Reinvention</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore ut facere repellat temporibus!
+                    Minima repudiandae minus eveniet nemo aliquam sed iusto. Culpa, neque velit! Molestias eveniet
+                    tenetur sapiente rem!</p>
+            </div>
+            <img src="images/mountain.jpg" id="mountain-vector">
+        </section>
+
+        <ul id="cards">
+            <li>
+                <i class="fa fa-id-card" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dicta nesciunt a quia nam, sapiente
+                    est consectetur deserunt, saepe dolore rerum possimus ducimus sed? Minus deleniti ad officia magni
+                    dolorem!</p>
+            </li>
+            <li>
+                <i class="fa fa-id-card" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit</p>
+            </li>
+            <li>
+                <i class="fa fa-id-card" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit, ni dolorem!</p>
+            </li>
+            <li>
+                <i class="fa fa-id-card" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur!</p>
+            </li>
+            <li>
+                <i class="fa fa-id-card" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dicta nesciunt a quia nam, sapiente
+                    est consectetur deserunt, saepe dolore rerum possimus ducimus sed? Minus deleniti ad officia magni
+                    dolorem!</p>
+            </li>
+        </ul>
+
+    </div>
+    <footer>
+        <p>My footer bar</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

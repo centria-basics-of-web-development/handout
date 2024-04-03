@@ -1,0 +1,168 @@
+/* #grid-container {
+    display: grid;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 12% auto;
+    grid-template-rows: auto 50px;
+    grid-template-areas: 
+        "sidebar main"
+        "footer footer";
+}
+
+a { text-decoration: none;}
+
+ul { list-style-type: none;}
+
+ul li a {
+    color: white;
+    padding:15px;
+}
+
+ul li {
+    display: inline;
+}
+
+header {
+    background-color: #41c7c7;
+    display: grid;
+    grid-template-columns: [log-start] fit-content(20%) [nav-start] auto [nav-end];
+    grid-template-columns: fit-content(20%) auto;
+    grid-area: header;
+}
+
+#logo {
+    padding: 15px;
+    margin-left: 15px;
+    text-align: center;
+    display: inline-block;
+    color: #298383;
+    background-color: #f3f1c7;
+    font-weight: bold;
+    display: inline-block;
+}
+
+section#hero {
+    background-color: #36adad;
+    padding: 2em;
+    border-top: 5px solid #2ea0a0;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#content h1 {
+    text-transform: uppercase;
+    color: #fffbc5;
+}
+
+#content p {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#mountain {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.sidebar {
+    background-color: #1c9090;
+    color: white;
+    padding: 1em;
+    grid-area: sidebar;
+}
+
+.main {
+    /* display: grid; */
+    grid-area: main;
+    /* grid-template-rows: 51px fit-content(30%) 40%; */
+}
+
+footer {
+    background-color: lightgray;
+    grid-area: footer;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    text-align: center;
+}
+
+#cards i {
+    font-size: 2em;
+}
+
+ul#cards {
+    margin: 0;
+    padding: 0;
+}
+
+ul#cards li {
+    background-color: lightgray;
+    padding: 1em;
+}
+
+ul#cards li p {
+    color: #4c4c4c
+}
+
+ul#cards li:nth-child(1) {
+    background-color: #e6e6e6;
+}
+
+ul#cards li:nth-child(2) {
+    background-color: #d3d3d3;
+    justify-self: start;
+}
+
+ul#cards li:nth-child(3) {
+    background-color: #e6e6e6;
+    align-self: end;
+}
+
+ul#cards li:nth-child(4) {
+    background-color: #d3d3d3;
+    align-self: center;
+}
+
+ul#cards li:nth-child(5) {
+    background-color: #e6e6e6;
+}
+
+section#info {
+    background-color: #f2f2f2;
+    padding: 2em;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+}
+
+#mountain-vector {
+    width: 200px;
+    
+}
+
+
+@media screen and (max-width:60em) {
+    .sidebar {
+        display: none;
+    }
+}
